@@ -5,7 +5,7 @@ from io import BytesIO
 
 app = Flask(__name__)
 
-PROJECT_ID = "qwiklabs-gcp-02-99671df7afc7"
+PROJECT_ID = "PROJECT_ID"
 BUCKET_NAME = "postas"
 FILE_NAME = "establecimientos_20260526.csv"
 
