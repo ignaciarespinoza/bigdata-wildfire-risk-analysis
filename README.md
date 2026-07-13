@@ -48,9 +48,6 @@ Se diseñó una arquitectura Big Data basada en Google Cloud Platform que permit
 
 La solución se implementó utilizando una arquitectura Big Data basada en servicios administrados de Google Cloud Platform.
 
-<img width="798" height="437" alt="image" src="https://github.com/user-attachments/assets/04f6bd70-58c5-4ef0-874b-bb689e5fe478" />
-
-
 ---
 
 ## Dashboard
