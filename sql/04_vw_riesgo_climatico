@@ -1,0 +1,16 @@
+CREATE OR REPLACE VIEW `incendios-500902.Ev3.vw_riesgo_climatico` AS
+SELECT
+  *,
+  (viento_kmh >= 30) AS viento_fuerte,
+  CASE
+    WHEN temperatura_c >= 30
+         AND humedad_pct <= 20
+         AND viento_kmh >= 30 THEN 'Extremo'
+    WHEN temperatura_c >= 25
+         AND humedad_pct <= 35
+         AND viento_kmh >= 20 THEN 'Alto'
+    WHEN temperatura_c >= 20
+         AND humedad_pct <= 50 THEN 'Moderado'
+    ELSE 'Bajo'
+  END AS riesgo_propagacion
+FROM `incendios-500902.Ev3.fact_clima`;
