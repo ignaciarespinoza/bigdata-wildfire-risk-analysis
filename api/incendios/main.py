@@ -9,7 +9,7 @@ app = Flask(__name__)
 # =========================
 # CONFIG
 # =========================
-PROJECT_ID = "qwiklabs-gcp-02-99671df7afc7"
+PROJECT_ID = "PROJECT_ID"
 BUCKET = "incendio"
 FILE = "incendios_chile_2024_2025.csv"
 
