@@ -1,0 +1,35 @@
+CREATE OR REPLACE TABLE `incendios-500902.Ev3.dim_incendio` AS
+SELECT
+  id_incendio,
+  region,
+  comuna,
+  DATE(inicio_incendio) AS fecha_inicio,
+  DATE(termino_incendio) AS fecha_termino,
+  geom_wkt,
+  SAFE.ST_GEOGFROMTEXT(geom_wkt) AS geom,
+  CASE
+    WHEN SAFE.ST_GEOGFROMTEXT(geom_wkt) IS NOT NULL
+    THEN ST_CENTROID(SAFE.ST_GEOGFROMTEXT(geom_wkt))
+    ELSE NULL
+  END AS centroide,
+  superficie_ha,
+  peligro_interfaz,
+  estado_validacion,
+  CASE
+    WHEN tipo_suelo_agricola = 1 THEN 'Agrícola'
+    WHEN tipo_suelo_bosque_nativo = 1 THEN 'Bosque Nativo'
+    WHEN tipo_suelo_matorral = 1 THEN 'Matorral'
+    WHEN tipo_suelo_pastizal = 1 THEN 'Pastizal'
+    WHEN tipo_suelo_plantacion_pino_eucaliptus = 1 THEN 'Plantación Pino/Eucaliptus'
+    ELSE 'Desconocido'
+  END AS tipo_suelo,
+  CASE
+    WHEN causa_probable_accidental_quema = 1 THEN 'Accidental (Quema)'
+    WHEN causa_probable_desconocida = 1 THEN 'Desconocida'
+    WHEN causa_probable_falla_electrica = 1 THEN 'Falla Eléctrica'
+    WHEN causa_probable_intencional = 1 THEN 'Intencional'
+    WHEN causa_probable_natural_rayo = 1 THEN 'Natural (Rayo)'
+    ELSE 'Desconocida'
+  END AS causa_probable,
+  termino_incendio IS NULL AS es_activo
+FROM `incendios-500902.Ev3.incendios`;
