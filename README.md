@@ -8,7 +8,7 @@ Big Data solution for analyzing wildfire impact on critical healthcare infrastru
 
 Este proyecto desarrolla una solución Big Data para analizar el impacto de incendios forestales sobre infraestructura crítica de salud en Chile mediante tecnologías cloud de Google.
 
-La solución integra distintas fuentes de información, implementa procesos ETL, construye un modelo dimensional en BigQuery y genera dashboards interactivos para apoyar la toma de decisiones.
+La solución integra distintas fuentes de información, implementa procesos ELT, construye un modelo dimensional en BigQuery y genera dashboards interactivos para apoyar la toma de decisiones.
 
 ---
 
@@ -25,7 +25,7 @@ Este proyecto busca centralizar, transformar y visualizar los datos para facilit
 Se diseñó una arquitectura Big Data basada en Google Cloud Platform que permite:
 
 - Integrar múltiples fuentes de datos.
-- Procesar información mediante ETL.
+- Procesar información mediante ELT.
 - Almacenar datos en BigQuery.
 - Implementar un modelo dimensional.
 - Generar consultas analíticas.
@@ -58,6 +58,3 @@ El dashboard permite visualizar indicadores relacionados con:
 - Riesgo de infraestructura crítica.
 - Distribución territorial.
 - Métricas de apoyo a la toma de decisiones.
-
-*(Agregar capturas del dashboard aquí)*
-  
