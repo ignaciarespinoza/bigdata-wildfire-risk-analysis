@@ -1,11 +1,15 @@
-# Dashboards
+## Dashboard
 
-Esta carpeta contiene capturas del dashboard desarrollado en Looker Studio.
+Se desarrolló un dashboard interactivo en Looker Studio para visualizar información sobre incendios forestales, infraestructura crítica de salud y condiciones meteorológicas.
 
-## Contenido:
+### Vista General:
 
-- Dashboard General.
-- Dashboard de Riesgo.
-- Dashboard de Alertas.
+![Dashboard General](dashboards/dashboard_general.png)
 
-Los dashboards permiten visualizar indicadores relacionados con incendios forestales, infraestructura crítica de salud y condiciones meteorológicas para apoyar la toma de decisiones.
+### Análisis de Riesgo:
+
+![Dashboard Riesgo](dashboards/dashboard_riesgo.png)
+
+### Alertas para Postas Rurales:
+
+![Dashboard Alertas](dashboards/dashboard_alertas.png)
