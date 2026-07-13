@@ -1,0 +1,18 @@
+CREATE OR REPLACE TABLE `incendios-500902.Ev3.dim_posta` AS
+SELECT
+  EstablecimientoCodigo AS id_posta,
+  EstablecimientoGlosa AS nombre_posta,
+  RegionGlosa AS region,
+  ComunaGlosa AS comuna,
+  Latitud AS latitud,
+  Longitud AS longitud,
+  CASE
+    WHEN Latitud IS NOT NULL AND Longitud IS NOT NULL
+    THEN ST_GEOGPOINT(Longitud, Latitud)
+    ELSE NULL
+  END AS geom,
+  EstadoFuncionamiento,
+  FechaCierre,
+  FechaIncorporacion,
+  (FechaCierre IS NULL AND EstadoFuncionamiento != 'Cerrado') AS esta_activa
+FROM `incendios-500902.Ev3.postas_rurales`;
