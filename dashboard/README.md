@@ -4,12 +4,12 @@ Se desarrolló un dashboard interactivo en Looker Studio para visualizar informa
 
 ### Vista General:
 
-![Dashboard General](dashboards/dashboard_general.png)
+![dashboard](dashboards/dashboard_general.png)
 
 ### Análisis de Riesgo:
 
-![Dashboard Riesgo](dashboards/dashboard_riesgo.png)
+![dashboard](dashboards/dashboard_riesgo.png)
 
 ### Alertas para Postas Rurales:
 
-![Dashboard Alertas](dashboards/dashboard_alertas.png)
+![dashboard](dashboards/dashboard_alertas.png)
