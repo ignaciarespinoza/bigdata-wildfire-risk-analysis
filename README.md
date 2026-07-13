@@ -14,9 +14,11 @@ La solución integra distintas fuentes de información, implementa procesos ELT,
 
 ## Problema
 
-Los incendios forestales representan una amenaza para la infraestructura crítica y la continuidad de los servicios de salud. Sin embargo, la información suele encontrarse distribuida en distintas fuentes, dificultando su análisis conjunto.
+Chile enfrenta cada año incendios forestales que pueden afectar infraestructura crítica de salud.
 
-Este proyecto busca centralizar, transformar y visualizar los datos para facilitar el monitoreo de zonas de riesgo.
+Sin embargo, la información suele encontrarse distribuida entre múltiples fuentes, dificultando el monitoreo oportuno del riesgo.
+
+Este proyecto desarrolla una plataforma Big Data que integra información de incendios, establecimientos de salud y condiciones meteorológicas para apoyar la toma de decisiones mediante análisis geoespacial y visualización interactiva.
 
 ---
 
