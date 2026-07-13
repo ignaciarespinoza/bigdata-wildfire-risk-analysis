@@ -8,7 +8,7 @@ import functions_framework
 import json
 
 # --- CONFIGURACIÓN ---
-PROJECT_ID = "qwiklabs-gcp-04-586e12a807cf" 
+PROJECT_ID = "PROJECT_ID" 
 DATASET = "datos_emergencia"
 TABLE = "clima"
 
