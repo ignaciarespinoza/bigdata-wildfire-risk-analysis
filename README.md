@@ -37,13 +37,23 @@ Se diseñó una arquitectura Big Data basada en Google Cloud Platform que permit
 
 ## Tecnologías
 
-- Python
-- SQL
-- Google Cloud Platform
-- BigQuery
-- Cloud Run
-- Looker Studio
+🐍 Python
 
+🗄 SQL
+
+☁ Google Cloud Platform
+
+📊 BigQuery
+
+🛰 Cloud Storage
+
+⚡ Cloud Run
+
+🌦 Open-Meteo API
+
+📈 Looker Studio
+
+🧭 GIS / Geospatial SQL
 ---
 
 ## Arquitectura
