@@ -4,15 +4,15 @@ Esta carpeta contiene el código fuente de los procesos de ingesta de datos impl
 
 ## Procesos implementados
 
-### Incendios Forestales
+### Incendios Forestales:
 
 Carga y transformación de datos provenientes de archivos CSV almacenados en Cloud Storage hacia BigQuery.
 
-### Postas Rurales
+### Postas Rurales:
 
 Filtrado y carga de establecimientos de salud rurales desde Cloud Storage hacia BigQuery.
 
-### Datos Meteorológicos
+### Datos Meteorológicos:
 
 Obtención de información meteorológica mediante la API Open-Meteo e integración automática con BigQuery y Cloud Storage.
 
